@@ -1,5 +1,8 @@
 from django import forms
 from .models import Post
+
 class PostForm(forms.ModelForm):
+
     class Meta:
-        model = Postfields = ('title','text')
+        model = Post
+        fields = ('title','text',)
